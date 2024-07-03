@@ -1,17 +1,8 @@
 from support_file import *
 
-streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-header {visibility: hidden;}
-footer {visibility: hidden;}
-</style>
-"""
-
 provider_options = ["Canadian Tire","Food Basics","Home Depot","Metro","No Frills", "Walmart", "None of the above"]
 category_options = ["Gas","Grocery","Home Improvement"]
 
-st.markdown(streamlit_style, unsafe_allow_html=True)
 with st.form("Expenses_Form", clear_on_submit=True):
     input_date = st.date_input("**Enter the date of the purchase:**")
     input_bill = st.text_input("**Enter the bill number:**", max_chars=50, placeholder="Type here")
