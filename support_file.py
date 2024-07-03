@@ -1,16 +1,6 @@
 import streamlit as st
 import sqlite3
 
-streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-header {visibility: hidden;}
-footer {visibility: hidden;}
-</style>
-"""
-
-st.markdown(streamlit_style, unsafe_allow_html=True)
-
 ### User-defined functions for DataBase ###
             
 def get_db_connection():
