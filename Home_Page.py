@@ -10,3 +10,5 @@ pages = {
 pg = st.navigation(pages)
 pg.run()
 initialize_db()
+
+st.write("Home Page")
